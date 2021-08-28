@@ -1,1 +1,1 @@
-# myweb_portfolio
+In this prroject I have created an website using django web-framework. At this website users users can read, download my portfolio, also they can read blogs on this website. For any query there is a contact page.
