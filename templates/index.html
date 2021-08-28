@@ -1,12 +1,26 @@
 {% extends 'base.html' %}
 {% block title %}Home{% endblock title %}
 {% block body %}
+
+
 {% load static %}
-<h2 style="padding-top: 2%; font-weight: bold;">Ajay Kumar</h2>
-<img src="{% static 'portfolio/images/formal_photo.jpeg' %}">
-<h2 style="font-weight: bold;">About Me</h2>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem enim vel distinctio 
-    cumque ea soluta magni itaque qui nobis! Magnam, iure incidunt perspiciatis nam ullam
-    consequatur? Magni soluta libero quo.</p>
+
+<div class="home-crousal">
+  <h1 style="color: blue; text-align: center; padding-top: 20px;">About Me</h1>
+
+  <div class="about" style="padding-top: 2%;">
+    <p style="box-sizing: border-box; color: rgb(36, 36, 46);">I am a profession web developer and data analyst. I graduated from IIT Delhi in 2021. My major of 
+      study was chemical engineering. I starting coding in 2nd year of my graduation. 
+
+    </p>
+  </div>
+
+  <div class="profile-pic">
+
+    <img src="{% static 'portfolio/images/formal_photo.jpeg' %}" alt="pic">
+
+  </div>
+</div>
+
 
 {% endblock body %}

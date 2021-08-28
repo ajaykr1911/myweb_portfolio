@@ -2,6 +2,12 @@
 {% block title %}CV{% endblock title %}
 {% block body %}
 {% load static %}
-<h2>My CV</h2>
-<a href="{% static 'portfolio/cv/my_cv.pdf' %}">View or download</a>
+
+<div class="cv-view-download">
+    <img src="{% static 'portfolio/images/cv.jpg' %}" alt="pic" style="max-width: 100%; height: auto;">
+
+    <a href="{% static 'portfolio/cv/my_cv.pdf' %}">
+        <button>Download</button>
+    </a>
+</div>
 {% endblock body %}

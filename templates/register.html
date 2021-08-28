@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}register{% endblock title %}
+{% block body %}
+
+<div class="contact-card">
+    <article class="card-body mx-auto" style="max-width: 400px;">
+        <h4 class="card-title text-center">Create Account</h4>
+        <p class="text-center">Get started with your free account</p>
+
+        <form action="{% url 'register' %}" method="post">
+            {% csrf_token %}
+            <input name="name" id="name" class="form-control" placeholder="Full name" type="name">
+            <input name="email" id="email" class="form-control" placeholder="Email address" type="email">
+            <input name="mobile" id="mobile" class="form-control" placeholder="Phone number" type="mobile">
+            <input name="password" id="password" class="form-control" placeholder="Create password" type="password">
+            <input name="repassword" id="repassword" class="form-control" placeholder="Repeat password" type="repassword">
+
+            <button type="submit" class="btn btn-primary btn-block"> Create Account </button>
+            <p class="text-center">Have an account? <a href="">Log In</a> </p>
+
+        </form>
+    </article>
+</div> <!-- card.// -->
+
+{% endblock body %}
