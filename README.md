@@ -1,1 +1,1 @@
-In this prroject I have created a website using django web-framework. At this website users users can read, download my portfolio, also they can read blogs on this website. For any query there is a contact page.
+In this prroject I have created a website using django web-framework. At this website users can read, download my portfolio, also they can read blogs on this website. For any query there is a contact page.
